@@ -55,7 +55,7 @@ async def analyze(request):
     return JSONResponse({'result': textResponse(data)})
 
 def textResponse(data):
-    csv_string = learn.predict(data['file'], 40, temperature=1.1, min_p=0.001)
+    csv_string = learn.predict(data['file'], 25, temperature=0.5, min_p=0.001)
     time.sleep(2)
 
     words = csv_string.split()
