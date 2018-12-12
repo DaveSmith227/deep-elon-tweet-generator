@@ -1,0 +1,46 @@
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Deep Elon: AI Tweets from Mars</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='../static/style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://drive.google.com/uc?export=view&id=1e7WVP4PBg7O_uFSgfcR2n58H6F5Xr9eC" />
+        <script src='../static/client.js'></script>
+    </head>
+    <body>
+        <div>
+            <div class='center'>
+                <p class="img-logo">
+                    <img src = "static/tweets-from-mars-logo.png" width = 50% height = auto alt = "logo" />
+                </p>
+                <span class="headline">BREAKING NEWS </span> 
+                <div class='description'>Elon has landed on Mars!! </br>And his tweets are </br> totally bonkers!</div>
+                <div class='content'>
+                    <div class="row">
+                        <span class="input">
+                            <input id="text-input" onchange='showText(this)' type="text" placeholder="Type the first few words of his tweet" maxlength="20">
+                            <span></span>   
+                        </span>
+                    </div>
+                    <div class='analyze'>
+                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Generate Tweet</button>
+                    </div>
+                    <div class='result-label'>
+                        <label id='result-label'></label>
+                    </div>
+                </div>
+                <p class='footer'>
+                    <a href="https://github.com/DaveSmith227/deep-elon-tweet-generator" target="_blank" title="GitHub"> 
+                        <img src="static/GitHub-Mark-Light-32px.png" alt="GitHub" width="32" height="32" />
+                    </a>                  
+                    <a href="https://twitter.com/Musk_from_Mars" target="_blank" title="Twitter">
+                        <img src="static/Twitter_Social_Icon_Circle_White.png" alt="Twitter" width="32" height="32" />
+                    </a>
+                    Tweet me your favorite tweet!    
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
