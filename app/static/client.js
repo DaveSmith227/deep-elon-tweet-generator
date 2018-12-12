@@ -28,7 +28,7 @@ function analyze() {
     // if (uploadFiles.length != 1) alert('Please select 1 file to analyze!');
 
     el('analyze-button').innerHTML = 'Generating...';
-    el('result-label').innerHTML = 'Please refresh and try again if nothing shows up after a minute.'
+    el('result-label').innerHTML = 'Please refresh and try again if nothing shows up after 2 minutes.'
     var xhr = new XMLHttpRequest();
     var loc = window.location
     xhr.open('POST', `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`, true);
