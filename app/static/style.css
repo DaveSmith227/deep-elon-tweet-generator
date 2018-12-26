@@ -126,12 +126,39 @@ button.analyze-button {
 
 button:focus {outline:0;}
 
-.footer {
-    margin-top: 3em;
+.navbar {
+  background-color: transparent;
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Helvetica Neue';
+  font-weight: 800;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.blog {
+    margin-top: 5em;
     margin-left: 0em;
-    text-decoration: none!important;
     font-family: 'Helvetica Neue';
     font-weight: 800;
-    font-size: 14px;
-    color: #ffffff;
+    font-size: 18px;
+    color: #ffffff; 
 }
